@@ -18,4 +18,9 @@ describe DockingStation do
   it 'responds to .bikes' do
     expect(subject).to respond_to(:bike)
   end
+
+  it  'docks bike' do
+    bike = Bike.new
+    expect(subject.dock(bike)).to eq bike
+  end
 end
