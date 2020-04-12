@@ -1,0 +1,2 @@
+describe Bike do
+end
